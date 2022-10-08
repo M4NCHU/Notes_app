@@ -1,0 +1,113 @@
+body {
+    background: #121212;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 265px);
+    gap: 20px;
+    margin: 40px;
+}
+
+.note {
+    background: #1F1B24;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    border: 1px solid #CF6679;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.note:hover {
+    background: #2c2731;
+}
+
+.note__date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: relative;
+}
+
+.note__date  {
+    color: white;
+    color: white;
+    z-index: 1000;
+}
+
+
+.add{
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.add i{
+    margin: 0;
+    font-size: 50px;
+}
+
+.lista{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    padding: 0 10px ;
+    background: #CF6679;
+    border-radius: 10px;
+    transform: scale(0);
+}
+
+ ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.settings li{
+    padding: 10px;
+}
+
+.settings.show .lista{
+    transform: scale(1);}
+
+
+.popout{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.popout__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+
+.showw{
+    display: block;
+}
+
